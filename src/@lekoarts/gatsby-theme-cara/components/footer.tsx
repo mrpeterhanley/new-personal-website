@@ -20,6 +20,7 @@ const Footer = () => {
         onClick={toggleColorMode}
         type="button"
         aria-label="Toggle dark mode"
+        style={{borderRadius: "5px"}}
       >
         {isDark ? `Light` : `Dark`}
       </button>
