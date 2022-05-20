@@ -43,7 +43,9 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
             gridGap: [4, 4, 4, 5],
             gridTemplateColumns: [`1fr`, `1fr`, `repeat(2, 1fr)`],
             h2: { gridColumn: `-1/1`, color: `white !important` },
-            marginBottom: `200px`
+            '@media screen and (max-width: 600px)': {
+              marginBottom: `600px`,
+            },
           }}
         >
           
