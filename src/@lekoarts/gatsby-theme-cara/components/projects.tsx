@@ -18,7 +18,14 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
       factor={factor}
     />
     <Content speed={0.4} offset={offset + 0.2} factor={factor}>
-      <Inner>
+      <Inner
+      sx={{
+        '@media screen and (max-width: 600px)': {
+          marginTop: `400px`,
+          marginBottom: '400px'
+        },
+      }}
+      >
         <h2
         sx={{
           fontSize: `3rem`,
@@ -43,9 +50,6 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
             gridGap: [4, 4, 4, 5],
             gridTemplateColumns: [`1fr`, `1fr`, `repeat(2, 1fr)`],
             h2: { gridColumn: `-1/1`, color: `white !important` },
-            '@media screen and (max-width: 600px)': {
-              marginBottom: `600px`,
-            },
           }}
         >
           
