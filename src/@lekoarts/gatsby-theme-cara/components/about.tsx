@@ -42,13 +42,24 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
       >
         <div
           sx={{
-            '& li': { fontSize: `1.25rem` },
+            '& ul': { paddingLeft: `0` },
+            '& li': { fontSize: `1.25rem`, listStyle: `none`, paddingLeft: `0` },
             '@media screen and (max-width: 400px)': {
               '& li': { fontSize: `1rem` },
             },
           }}
           >
-        <AboutMDX />
+            <AboutMDX />
+           <ul>
+             <li>✔ Javascript, React, Gatsby</li>
+             <li>✔ CSS, Responsive Web Design</li>
+             <li>✔ Node.js, PHP, Liquid</li>
+             <li>✔ RESTful APIs</li>
+             <li>✔ CMSs such as Siteglide, Wordpress, Webflow</li>
+             <li>✔ eCommerce Platforms such as Shopify</li>
+             <li>✔ Cloud and Serverless Computing (I am a <a href="https://www.credly.com/users/peter-hanley-dev">Certified AWS Developer & Solutions Architect</a>)</li>
+           </ul>
+        
         </div>
       </Inner>
     </Content>

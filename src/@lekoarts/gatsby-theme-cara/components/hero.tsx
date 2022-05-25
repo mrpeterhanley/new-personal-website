@@ -56,9 +56,9 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
         onClick={toggleColorMode}
         type="button"
         aria-label="Toggle dark mode"
-        style={{borderRadius: "5px", position: "absolute", top: "20px", right: "20px"}}
+        style={{borderRadius: "5px", position: "absolute", top: "20px", right: "20px", fontSize: "20px"}}
       >
-        {isDark ? `Light` : `Dark`}
+        {isDark ? `🌞` : `🌛`} 
       </button>
       <Inner>
         <Intro />
