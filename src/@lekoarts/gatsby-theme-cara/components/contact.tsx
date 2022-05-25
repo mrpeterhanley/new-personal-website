@@ -48,7 +48,7 @@ const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) =>
             <textarea style={{padding: '8px 16px', borderRadius: "5px", border: "1px solid", gridColumn: "1 / -1"}} placeholder="Message" name="message" id="message" rows="5" />
       
             <div style={{gridColumn: "1 / -1", display: "flex", justifyContent: "center"}}>
-            <button style={{color: "var(--theme-ui-colors-background)", backgroundColor: "var(--theme-ui-colors-text)", fontWeight: "600", padding: "0.5rem 1rem", border: "none", borderRadius: "5px", cursor: "pointer"}} type="submit">Send</button>
+            <button style={{color: "var(--theme-ui-colors-background)", backgroundColor: "var(--theme-ui-colors-text)", fontWeight: "600", padding: "0.5rem 1rem", border: "none", borderRadius: "5px", cursor: "pointer"}} type="submit">📩  Send</button>
             </div>
         </form>
       </Inner>
